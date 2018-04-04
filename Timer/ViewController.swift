@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         imageCounter.text = String(counter)
-    }
+     }
     
     @IBAction func play(_ sender: Any) {
         if checked == true {
