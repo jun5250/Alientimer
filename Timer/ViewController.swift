@@ -3,7 +3,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var counter = 1
-    var myTimer = Timer()
+    var JTimer = Timer()
     var check = true
     var checked = true
     
@@ -18,11 +18,11 @@ class ViewController: UIViewController {
     @IBAction func play(_ sender: Any) {
         if checked == true {
             
-            myTimer = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(doAnimation), userInfo: nil, repeats: true)
+            JTimer = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(doAnimation), userInfo: nil, repeats: true)
             checked = false
             
         } else if checked == false{
-            myTimer.invalidate()
+            JTimer.invalidate()
             checked = true
         }
         
